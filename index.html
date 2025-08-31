@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍕 Pizzaria do Mineiro</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #ffb347;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .At {
+            background-image: url('fundo.jpeg');
+            background-size: 900px 700px;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex: 1;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .Conteiner {
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .Conteiner h2 {
+            color: #00c3ff;
+            border-left: 6px solid #00c3ff;
+            padding-left: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        }
+
+        p {
+            color: #fff;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 10px auto;
+        }
+
+        .button {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            font-weight: bold;
+            padding: 12px 30px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+
+        .Fim {
+            
+            text-align: center;
+            color: #ffb347;
+            padding: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            .Conteiner h2 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .At {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍕 Pizzaria do Mineiro & Black Franca</h1>
+        <nav>
+            <a href="Cardapio.html" target="_blank">Cardápio</a>
+        </nav>
+    </header>
+
+    <div class="At">
+        <div class="Conteiner">
+            <h2>Quem Somos Nós?</h2>
+            <p>
+                “Somos o <strong>Grupo Valério</strong> e acreditamos que uma boa pizza é feita com amor, ingredientes frescos e receitas que passam de geração em geração. Nosso compromisso é oferecer sabores autênticos, atendimento acolhedor e uma experiência única para cada cliente. Venha nos conhecer e descubra o verdadeiro sabor da pizza artesanal!”
+            </p>
+        </div>
+
+        <div class="Conteiner" style="text-align:center;">
+            <p>📞 Contato: +55 (16) 99162-9326 | Atendemos Franca-SP</p>
+            <p>⏰ Horário de Funcionamento:</p>
+            <p>Segunda, Quarta e Quinta: 18:00 às 23:59</p>
+            <p>Sexta, Sábado e Domingo: 18:00 às 03:00</p>
+            <a href="https://wa.me/5516991629326" target="_blank" class="button">📱 Pedir pelo WhatsApp</a>
+        </div>
+    </div>
+
+    <footer class="Fim">&copy; Direitos Reservados</footer>
+</body>
+</html>

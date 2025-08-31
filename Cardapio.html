@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍕 Cardápio - Pizzaria do Mineiro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #ffb347;
+            text-shadow: 1px 1px 4px black;
+            text-align: center;
+        }
+
+        .cardapio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .pizza-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #00c3ff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pizza-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .pizza-card h2 {
+            color: #00c3ff;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .pizza-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .whatsapp-button {
+            display: block;
+            background: #25D366;
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 30px auto;
+            width: fit-content;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-button:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            text-align: center;
+            color: #ffb347;
+            padding: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .pizza-card h2 {
+                font-size: 1.2rem;
+            }
+            .pizza-card p {
+                font-size: 0.95rem;
+            }
+            .whatsapp-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍕 Cardápio - Pizzaria do Mineiro</h1>
+    </header>
+
+    <div class="cardapio-container">
+        <div class="pizza-card">
+            <h2>01: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Frango com Catupiry e metade Portuguesa</p>
+        </div>
+        <div class="pizza-card">
+            <h2>02: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Presunto e Mussarela e metade Calabresa Paulista</p>
+        </div>
+        <div class="pizza-card">
+            <h2>03: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Frango Catupiry e metade Calabresa Paulista</p>
+        </div>
+        <div class="pizza-card">
+            <h2>04: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Milho com Bacon e metade Calabresa Paulista</p>
+        </div>
+        <div class="pizza-card">
+            <h2>05: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Frango Cheddar e metade Calabresa Paulista</p>
+        </div>
+        <div class="pizza-card">
+            <h2>06: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Frango Catupiry e metade Milho com Bacon</p>
+        </div>
+        <div class="pizza-card">
+            <h2>07: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Frango Cheddar e metade Presunto e Mussarela</p>
+        </div>
+        <div class="pizza-card">
+            <h2>08: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Frango Catupiry e metade Frango Cheddar</p>
+        </div>
+        <div class="pizza-card">
+            <h2>09: Pizza Grande 35cm</h2>
+            <p>8 fatias, Borda de sua preferência, metade Calabresa Cheddar e metade Calabresa Catupiry</p>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5516991629326" target="_blank" class="whatsapp-button">📱 Pedir pelo WhatsApp</a>
+
+    <footer>
+        &copy; Direitos Reservados
+    </footer>
+</body>
+</html>
